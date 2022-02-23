@@ -1,6 +1,6 @@
 module.exports = {
-    env: {
-        username: "maora",
-      password: 'nema99617411',
-    },
-  }
+  env: {
+    username: "maora",
+    password: "nema99617411",
+  },
+};
