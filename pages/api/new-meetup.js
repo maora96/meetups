@@ -7,7 +7,7 @@ async function handler (req, res) {
     if (req.method === 'POST') {
         const data = req.body
 
-        const client = await MongoClient.connect('mongodb+srv://maora:nema99617411@cluster0.2rzep.mongodb.net/meetups?retryWrites=true&w=majority')
+        const client = await MongoClient.connect(`mongodb+srv://maora:${process.env.password}@cluster0.2rzep.mongodb.net/meetups?retryWrites=true&w=majority`)
         const db = client.db()
 
         const meetupsCollection = db.collection('meetups')
